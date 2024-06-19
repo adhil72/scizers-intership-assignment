@@ -20,9 +20,9 @@ export default function WelecomeComponent() {
                         <OutlinedButton>enquire now</OutlinedButton>
                     </div>
                 </Flex>
-                <Flex className="w-full justify-between my-40" direction='auto' autoSize="lg">
+                <Flex className="w-full justify-between my-40 flex-col lg:flex-row">
                     <Box className="w-full lg:w-2/4">
-                        <span className="uppercase font-bold text-primary text-6xl sm:text-md">Harbour Lights  DE <span className="text-secondary">GRESOGONO</span></span>
+                        <span className="uppercase font-bold text-primary text- md:text-md">Harbour Lights  DE <span className="text-secondary">GRESOGONO</span></span>
                         <br />
                         <br />
                         <span className="font-bold text-primary text-2xl">1, 2 & 3 Bedrooms Seaside Apartments in Dubai Maritime City</span>
