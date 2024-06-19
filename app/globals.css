@@ -6,3 +6,16 @@
 body {
   margin: 0; 
 }
+
+.btn-outlined{
+  border: 1px solid;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-solid{
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
