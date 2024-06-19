@@ -51,8 +51,10 @@ export default function Aminities() {
                         </center>
                     </div>
                 </div>
-
             </Box>
+            <Flex className="w-full justify-end mt-10">
+                <span className="text-sm text-gray-500">*T&Cs apply | ** Based on similar branded projects in the last 2 years. Source 1 | Source 2</span>
+            </Flex>
         </Container>
     </Box>
 }
