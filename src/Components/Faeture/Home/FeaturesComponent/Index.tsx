@@ -8,8 +8,8 @@ import Flex from "@/Components/Common/Flex";
 
 export default function FeaturesComponent() {
     return <Box className="bg-secondary-light">
-        <Container className="py-10">
-            <Flex className="justify-evenly">
+        <Container className="py-20">
+            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-10 justify-items-center">
                 <Flex direction="col" className="items-center text-dark">
                     <BuildingIcon className="w-12 h-12 text-primary" />
                     <span className="mt-1 uppercase">Book with</span>
@@ -34,7 +34,7 @@ export default function FeaturesComponent() {
                     <span className="mt-1 font-bold text-3xl uppercase">700 sqmt</span>
                     <div className="mt-2 w-20 h-2 bg-slate-300 rounded-full"></div>
                 </Flex>
-            </Flex>
+            </div>
         </Container>
     </Box>
 }

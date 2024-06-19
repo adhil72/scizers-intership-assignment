@@ -27,9 +27,10 @@ const config: Config = {
       colors: {
         primary: "#ffffff",
         secondary: "#17ABFF",
-        "secondary-dark":"#00357B",
+        "secondary-dark": "#00357B",
         secondaryLight: "#F4F9FF",
         danger: "#e3342f",
+        body: "##343434"
       }
     },
   },
