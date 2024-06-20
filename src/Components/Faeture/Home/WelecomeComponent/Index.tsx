@@ -1,4 +1,5 @@
 import { Images } from "@/Assets/Images";
+import MenuIcon from "@/Assets/svg/MenuIcon";
 import Box from "@/Components/Common/Box";
 import Container from "@/Components/Common/Container";
 import Flex from "@/Components/Common/Flex";
@@ -9,14 +10,15 @@ import Image from "next/image";
 export default function WelecomeComponent() {
     return (
         <div className="relative bg-banner bg-cover p-3">
-            <div className="absolute inset-0 bg-black opacity-50"></div>
+            <div className="absolute inset-0 bg-primary-light-b bg-opacity-50"></div>
             <Container className="relative z-10">
                 <Flex className="justify-between items-center">
                     <div>
                         <Image src={Images.logo} alt="logo" width={165} height={20} />
                     </div>
-                    <div>
-                        <OutlinedButton className="text-secondary border-secondary">enquire now</OutlinedButton>
+                    <div className="">
+                        <OutlinedButton className="text-secondary border-secondary hidden lg:block">enquire now</OutlinedButton>
+                        <MenuIcon className="w-8 h-8 text-primary block lg:hidden">enquire now</MenuIcon>
                     </div>
                 </Flex>
                 <Flex className="w-full justify-between my-40 flex-col lg:flex-row">
@@ -37,7 +39,7 @@ export default function WelecomeComponent() {
                             <span className="ml-2 text-xl text-primary">Capital Appreciation of <span className="font-bold">UPTO 32%**</span></span>
                         </Flex>
                     </Box>
-                    <Box className="w-full mt-5 lg:mt-0 lg:w-2/4 flex justify-center rounded-3xl overflow-hidden">
+                    <Box className="w-full mt-20 lg:mt-0 lg:w-2/4 flex justify-center rounded-3xl overflow-hidden">
                         <Box className="w-full lg:w-fit bg-primary-light text-primary bg-opacity-10 backdrop-blur-lg rounded-3xl">
                             <Box className="px-10 py-10">
                                 <span className="uppercase text-lg">PRICING STARTS FROM</span> <br />

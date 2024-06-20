@@ -24,6 +24,7 @@ const config: Config = {
         danger: "#e3342f",
         "primary-light": "#5790BE",
         "secondary-dark": "#00357B",
+        "primary-light-b": "#0C2546"
       },
       backgroundImage: {
         banner: "url('/images/cover.png')",

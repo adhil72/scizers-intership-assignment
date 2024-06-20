@@ -18,13 +18,14 @@ const images = [
 export default function Gallary() {
 
     const [selectedImage, setSelectedImage] = useState(images[0]);
+    const [selectedCategory, setSelectedCategory] = useState<'Exteriors' | 'Interiors'>('Exteriors');
 
     return (
         <Box>
             <Container className="my-20">
                 <Flex className="justify-end">
-                    <SolidButton className="w-1/2 lg:w-fit text-sm bg-secondary-dark rounded-xl mr-2 text-primary">Exteriors</SolidButton>
-                    <OutlinedButton className="w-1/2 lg:w-fit text-sm border-secondary-dark text-secondary-dark rounded-xl">Interiors</OutlinedButton>
+                    <OutlinedButton onClick={() => setSelectedCategory("Exteriors")} className={`w-1/2 lg:w-fit text-sm border-secondary-dark rounded-xl mr-2 ${selectedCategory === 'Exteriors' ? 'bg-secondary-dark text-primary' : 'text-secondary-dark '}`}>Exteriors</OutlinedButton>
+                    <OutlinedButton onClick={() => setSelectedCategory("Interiors")} className={`w-1/2 lg:w-fit text-sm border-secondary-dark rounded-xl mr-2 ${selectedCategory === 'Interiors' ? 'bg-secondary-dark text-primary' : 'text-secondary-dark '}`}>Interiors</OutlinedButton>
                 </Flex>
                 <Box className="w-full h-[300px] md:h-[500px] lg:h-[600px] xl:h-[700px] relative mt-5">
                     <AnimatePresence>

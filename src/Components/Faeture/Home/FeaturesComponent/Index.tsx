@@ -14,8 +14,8 @@ export default function FeaturesComponent() {
                 {
                     FeaturesData.map((feature, index) => <Flex key={index} direction="col" className="items-center text-secondary-dark">
                         {feature.icon}
-                        <span className="mt-1 uppercase">{feature.title}</span>
-                        <span className="mt-1 font-bold text-3xl uppercase">{feature.subtitle}</span>
+                        <span className="mt-2 uppercase text-sm l">{feature.title}</span>
+                        <span className="font-bold text-xl md:text-3xl uppercase">{feature.subtitle}</span>
                         <Box className="mt-2 w-20 h-2 bg-slate-300 rounded-full"></Box>
                     </Flex>)
                 }
