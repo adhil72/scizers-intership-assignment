@@ -9,14 +9,14 @@ import Image from "next/image";
 export default function WelecomeComponent() {
     return (
         <div className="relative bg-banner bg-cover p-3">
-            <div className="absolute inset-0 bg-black opacity-20"></div>
+            <div className="absolute inset-0 bg-black opacity-50"></div>
             <Container className="relative z-10">
                 <Flex className="justify-between items-center">
                     <div>
                         <Image src={Images.logo} alt="logo" width={165} height={20} />
                     </div>
                     <div>
-                        <OutlinedButton>enquire now</OutlinedButton>
+                        <OutlinedButton className="text-secondary border-secondary">enquire now</OutlinedButton>
                     </div>
                 </Flex>
                 <Flex className="w-full justify-between my-40 flex-col lg:flex-row">
