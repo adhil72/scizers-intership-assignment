@@ -7,8 +7,14 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      height:{
+      height: {
         128: "42rem",
+        'p-96': "96%",
+        'p-100': "100%",
+      },
+      width: {
+        'p-96': "96%",
+        'p-100': "100%",
       },
       backgroundColor: {
         primary: "#ffffff",

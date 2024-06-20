@@ -2,6 +2,7 @@ import LogoOutlined from "@/Assets/svg/LogoOutlined";
 import Box from "@/Components/Common/Box";
 import Container from "@/Components/Common/Container";
 import Flex from "@/Components/Common/Flex";
+import AminitiesData from "./AminitiesData";
 
 export default function Aminities() {
     return <Box className="bg-primary">
@@ -15,41 +16,16 @@ export default function Aminities() {
                     </p>
                 </center>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-10 justify-items-center">
-                    <div className="p-5 m-5 shadow-xl rounded-b-lg rounded-t-full flex flex-col items-center">
-                        <div className="w-60 h-60 bg-slate-300 rounded-full flex items-center justify-center">
-                            <img style={{ width: "96%", height: "96%" }} src="/images/aminities/pool.png" alt="" className="cover" />
-                        </div>
-                        <center className="mt-3 mx-10">
-                            <span className="font-semibold text-secondary-dark text-xl">Floating pools</span>
-                        </center>
-                    </div>
-
-                    <div className="p-5 m-5 shadow-xl rounded-b-lg rounded-t-full flex flex-col items-center">
-                        <div className="w-60 h-60 bg-slate-300 rounded-full flex items-center justify-center">
-                            <img style={{ width: "96%", height: "96%" }} src="/images/aminities/room.png" alt="" className="cover" />
-                        </div>
-                        <center className="mt-3">
-                            <span className="font-semibold text-secondary-dark text-xl">Spacious Cabins<br />Like Rooms</span>
-                        </center>
-                    </div>
-
-                    <div className="p-5 m-5 shadow-xl rounded-b-lg rounded-t-full flex flex-col items-center">
-                        <div className="w-60 h-60 bg-slate-300 rounded-full flex items-center justify-center">
-                            <img style={{ width: "96%", height: "96%" }} src="/images/aminities/poolb.png" alt="" className="cover" />
-                        </div>
-                        <center className="mt-3 mx-10">
-                            <span className="font-semibold text-secondary-dark text-xl">Sea Facing<br />Swimming Pools</span>
-                        </center>
-                    </div>
-
-                    <div className="p-5 m-5 shadow-xl rounded-b-lg rounded-t-full flex flex-col items-center">
-                        <div className="w-60 h-60 bg-slate-300 rounded-full flex items-center justify-center">
-                            <img style={{ width: "96%", height: "96%" }} src="/images/aminities/gym.png" alt="" className="cover" />
-                        </div>
-                        <center className="mt-3 mx-10">
-                            <span className="font-semibold text-secondary-dark text-xl">Gymnasium & <br />Fitness</span>
-                        </center>
-                    </div>
+                    {
+                        AminitiesData.map((item, index) => <div key={index} className="rounded-t-full group p-5 m-5 shadow-xl hover:bg-secondary hover:text-primary flex flex-col items-center">
+                            <div className="w-60 h-60 bg-slate-300 rounded-full flex items-center justify-center">
+                                <img src={item.image} alt="" className="cover w-p-96 h-p-96" />
+                            </div>
+                            <center className="mt-3 w-32">
+                                <span className="font-semibold text-secondary-dark text-xl group-hover:text-primary">{item.title}</span>
+                            </center>
+                        </div>)
+                    }
                 </div>
             </Box>
             <Flex className="w-full justify-end mt-10">
