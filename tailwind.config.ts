@@ -7,6 +7,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      height:{
+        128: "42rem",
+      },
       backgroundColor: {
         primary: "#ffffff",
         secondary: "#091D41",
