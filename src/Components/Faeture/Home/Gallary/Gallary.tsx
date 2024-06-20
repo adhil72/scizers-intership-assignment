@@ -1,5 +1,7 @@
 import Box from "@/Components/Common/Box";
 import Container from "@/Components/Common/Container";
+import Flex from "@/Components/Common/Flex";
+import OutlinedButton from "@/Components/Common/OtlinedButton";
 import SolidButton from "@/Components/Common/SolidButton";
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
@@ -20,6 +22,10 @@ export default function Gallary() {
     return (
         <Box>
             <Container className="my-20">
+                <Flex className="justify-end">
+                    <SolidButton className="w-1/2 lg:w-fit text-sm bg-secondary-dark rounded-xl mr-2 text-primary">Exteriors</SolidButton>
+                    <OutlinedButton className="w-1/2 lg:w-fit text-sm border-secondary-dark text-secondary-dark rounded-xl">Interiors</OutlinedButton>
+                </Flex>
                 <Box className="w-full h-[300px] md:h-[500px] lg:h-[600px] xl:h-[700px] relative mt-5">
                     <AnimatePresence>
                         <motion.div

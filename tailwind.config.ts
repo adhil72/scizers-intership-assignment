@@ -22,7 +22,8 @@ const config: Config = {
         tint: "#17ABFF",
         "secondary-light": "#F4F9FF",
         danger: "#e3342f",
-        "primary-light": "#5790BE"
+        "primary-light": "#5790BE",
+        "secondary-dark": "#00357B",
       },
       backgroundImage: {
         banner: "url('/images/cover.png')",
@@ -32,6 +33,7 @@ const config: Config = {
         secondary: "#17ABFF",
         secondaryLight: "#F4F9FF",
         danger: "#e3342f",
+        "secondary-dark": "#00357B",
       },
       colors: {
         primary: "#ffffff",
