@@ -2,7 +2,7 @@ To start this Next.js app, follow these instructions:
 
 1. Clone the repository:
     ```
-    git clone <repository_url>
+    git clone https://github.com/adhil72/scizers-intership-assignment.git scizers
     ```
 
 2. Navigate to the project directory:
