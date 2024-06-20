@@ -2,9 +2,8 @@ import AreaIcon from "@/Assets/svg/AreaIcon";
 import BuildingIcon from "@/Assets/svg/BuildingIcon";
 import HandOverIcon from "@/Assets/svg/HandOverIcon";
 import PercentageIcon from "@/Assets/svg/PercentageIcon";
-import Box from "@/Components/Common/Box";
 
-export default [
+const data = [
     {
         icon: <BuildingIcon className="w-12 h-12 text-primary" />,
         title: "Book with",
@@ -26,3 +25,5 @@ export default [
         subtitle: "700 sqmt",
     }
 ]
+
+export default data

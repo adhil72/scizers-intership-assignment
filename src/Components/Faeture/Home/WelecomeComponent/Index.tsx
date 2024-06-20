@@ -21,7 +21,7 @@ export default function WelecomeComponent() {
                 </Flex>
                 <Flex className="w-full justify-between my-40 flex-col lg:flex-row">
                     <Box className="w-full lg:w-2/4">
-                        <span className="uppercase font-bold text-primary text- md:text-md">Harbour Lights  DE <span className="text-secondary">GRESOGONO</span></span>
+                        <span className="uppercase font-bold text-primary text-4xl md:text-5xl lg:text-6xl">Harbour Lights <br /> DE <span className="text-secondary">GRESOGONO</span></span>
                         <br />
                         <br />
                         <span className="font-bold text-primary text-2xl">1, 2 & 3 Bedrooms Seaside Apartments in Dubai Maritime City</span>

@@ -3,6 +3,7 @@ import Box from "@/Components/Common/Box";
 import Container from "@/Components/Common/Container";
 import Flex from "@/Components/Common/Flex";
 import AminitiesData from "./AminitiesData";
+import Image from "next/image";
 
 export default function Aminities() {
     return <Box className="bg-primary">
@@ -15,14 +16,16 @@ export default function Aminities() {
                         Harbour Lights beautifully honours maritime voyages while embracing an opulent seafront lifestyle. Its maritime-inspired amenities provide an unmatched seaside experience, offering a life of tranquility and bliss.
                     </p>
                 </center>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-10 justify-items-center">
+                <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-2 justify-items-center">
                     {
-                        AminitiesData.map((item, index) => <div key={index} className="rounded-t-full group p-5 m-5 shadow-xl hover:bg-secondary hover:text-primary flex flex-col items-center">
-                            <div className="w-60 h-60 bg-slate-300 rounded-full flex items-center justify-center">
-                                <img src={item.image} alt="" className="cover w-p-96 h-p-96" />
+                        AminitiesData.map((item, index) => <div key={index} className="rounded-t-full group p-5 shadow-xl hover:bg-secondary hover:text-primary flex flex-col items-center">
+                            <div className="w-40 h-40 md:w-60 md:h-60 bg-slate-300 rounded-full flex items-center justify-center">
+                                <div className="w-p-96 h-p-96">
+                                    <Image src={item.image} alt="" layout="fill" className="cover !static" />
+                                </div>
                             </div>
                             <center className="mt-3 w-32">
-                                <span className="font-semibold text-secondary-dark text-xl group-hover:text-primary">{item.title}</span>
+                                <span className="font-semibold text-secondary-dark text-xl group-hover:text-primary text-right">{item.title}</span>
                             </center>
                         </div>)
                     }

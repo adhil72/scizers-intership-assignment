@@ -1,4 +1,4 @@
-export default [
+const data = [
     {
         title: "Floating pools",
         image: "/images/aminities/pool.png"
@@ -16,3 +16,4 @@ export default [
         image: "/images/aminities/gym.png"
     }
 ]
+export default data 
