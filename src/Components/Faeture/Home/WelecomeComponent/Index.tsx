@@ -10,7 +10,6 @@ export default function WelecomeComponent() {
     return (
         <div className="relative bg-banner bg-cover p-3">
             <div className="absolute inset-0 bg-black opacity-20"></div>
-
             <Container className="relative z-10">
                 <Flex className="justify-between items-center">
                     <div>
@@ -44,7 +43,7 @@ export default function WelecomeComponent() {
                                 <span className="uppercase text-lg">PRICING STARTS FROM</span> <br />
                                 <span className="text-5xl font-bold">$ 425,000</span><div className="h-2"></div>
                                 <span className="text-2xl font-semibold">AED 1.3 Million</span><br /><br />
-                                <SolidButton className="w-full">GET A PRESENTATION</SolidButton>
+                                <SolidButton className="w-full bg-tint rounded-xl">GET A PRESENTATION</SolidButton>
                                 <br />
                             </Box>
                             <div className="line w-full h-0.5 bg-primary-light"></div>
